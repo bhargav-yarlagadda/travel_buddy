@@ -55,12 +55,12 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className='flex flex-col md:flex-row gap-1'>
-        <div className='flex-grow basis-1/2'>
+      <div className="flex flex-col md:flex-row gap-1 h-screen">
+        <div className="flex-grow basis-1/2 overflow-auto">
           <List places={places} />
         </div>
-        <div className='flex-grow basis-1/2'>
-          <Map setCoordinates={setCoordinates} coordinates={coordinates} setBounce={setBounce} />
+        <div className="flex-grow basis-1/2">
+          <Map places={places} setCoordinates={setCoordinates} coordinates={coordinates} setBounce={setBounce} />
         </div>
       </div>
     </>

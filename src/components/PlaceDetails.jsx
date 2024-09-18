@@ -6,7 +6,7 @@ const PlaceDetails = ({ place }) => {
 
   return (
     <div className="shadow-lg rounded-lg md:w-[80%] mx-auto overflow-hidden bg-white">
-      <div className="h-64 bg-cover bg-center" style={{ backgroundImage: `url(${place.photo ? place.photo.images.large.url : 'https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg'})` }}>
+      <div className="h-[300px] bg-cover bg-center" style={{ backgroundImage: `url(${place.photo ? place.photo.images.large.url : 'https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg'})` }}>
       </div>
       <div className="p-4">
         <h2 className="text-xl font-bold mb-2">{place.name}</h2>

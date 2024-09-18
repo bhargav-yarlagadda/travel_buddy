@@ -14,7 +14,7 @@ const List = ({ places }) => {
   };
 
   return (
-    <div className="py-8 px-4 max-h-screen overflow-y-scroll bg-gray-800">
+    <div className="py-8 px-4 max-h-screen md:overflow-y-scroll bg-gray-800">
       <div className="flex justify-center mb-6">
         <span className="text-white text-3xl font-semibold tracking-wide text-center">
           Hostels, Restaurants <br /> & Attractions Around You
