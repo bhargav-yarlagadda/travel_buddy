@@ -2,7 +2,7 @@ import React from "react";
 import GoogleMapReact from "google-map-react";
 
 const Map = ({ setCoordinates, setBounce, coordinates }) => {
-  const apiKey = "AIzaSyC8jM6cQ_Tc_WlNtmS7tiX12PFWZTxuxbk";
+  const apiKey = import.meta.env.REACT_API_KEY;
 
   const handleMapChange = ({ center, marginBounds }) => {
     setCoordinates({ lat: center.lat, lng: center.lng });
